@@ -1,12 +1,28 @@
 
-
 .top-side {
-  margin: 10px;
   text-align: right;
   display: flex;
   white-space: nowrap;
-  justify-content: flex-end;
-  .item {
-    display: inline-block;
+  list-style: none;
+  min-height: 80px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  flex-direction: row;
+  .flex-item {
+    border: 1px solid #a6a6a6;
+  }
+  .item1 {
+    flex: 0 0 60%;
+  }
+  .item2 {
+    flex: 0 0 15%;
+    display: inline;
+  }
+  .item3 {
+      flex: 0 0 5%;
   }
 }

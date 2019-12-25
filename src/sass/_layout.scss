@@ -56,6 +56,7 @@ a {
   display: flex;
   flex-direction: row;
  flex-wrap: wrap;
+ width: 100vw;
   min-height: 100vh;
  > * {
    margin-bottom: 5px;
@@ -65,28 +66,20 @@ a {
  }
 }
 
+
 .sidebar {
   flex: 0 1 15%;
   padding: 5px;
 }
 
 .column-wrapper {
-  flex: 0 1 85%;
+  flex: 0 0 85%;
   padding: 5px;
 }
 
-.top-side {
-  height: 50px;
-  display: inline-block;
-  width: 100%;
-  border: 1px solid red;
-  .item {
-    display: inline-block;
-  }
-}
 
 .main-content-wrapper {
-  height: 95%;
+  height: 90%;
   display: block;
   border: 1px solid red;
 }
