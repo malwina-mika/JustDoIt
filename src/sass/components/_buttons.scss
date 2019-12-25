@@ -1,0 +1,29 @@
+
+.btn {
+  padding: 10px;
+  border-radius: $radius;
+  color: $color-light;
+  background-color: $color-brand-main;
+  display: inline-block;
+  font-size: 18px;
+  box-shadow: none;
+  border: none;
+  min-width: 100px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  &:hover {
+    background-color: $color-main-hover;
+  }
+
+}
+
+.btn-main {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.btn:active,
+ .btn:focus {
+
+ }

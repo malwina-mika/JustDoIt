@@ -1,5 +1,19 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 h1, h2, h3 {
@@ -7,8 +21,10 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 30px;
   font-family: $main-font;
+  color: $color-light;
+  padding: 0 30px;
 }
 
 h2 {
@@ -31,37 +47,46 @@ a {
   font-size: 17px;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(1fr, 10);
-  grid-gap: 0;
-  height: (100vh * 1.5);
-  grid-auto-rows: 6%;
-   background-color: red;
+.sidebar, .top-side, .main-content-wrapper {
+  heigth: 100%;
+  width: 100%;
 }
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-  border: 2px solid blue;
-}
-
-.item1 {
-  grid-column: 1;
-  grid-row: 1 / 18;
-}
-
-.item2 {
-  grid-column: 2 / 10;
-  grid-row: 1 ;
+.flex-container {
+  display: flex;
+  flex-direction: row;
+ flex-wrap: wrap;
+  min-height: 100vh;
+ > * {
+   margin-bottom: 5px;
+   &:last-child {
+     margin-bottom: 0;
+   }
  }
-.item3 {
-  grid-column: 2 / 10;
-  grid-row:  2 / 10;
 }
-.item4 {
-  grid-column: 2 / 10;
-  grid-row: 10 / 18;
+
+.sidebar {
+  flex: 0 1 15%;
+  padding: 5px;
+}
+
+.column-wrapper {
+  flex: 0 1 85%;
+  padding: 5px;
+}
+
+.top-side {
+  height: 50px;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid red;
+  .item {
+    display: inline-block;
+  }
+}
+
+.main-content-wrapper {
+  height: 95%;
+  display: block;
+  border: 1px solid red;
 }
