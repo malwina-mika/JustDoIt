@@ -52,6 +52,16 @@ a {
   width: 100%;
 }
 
+.flex-item {
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.row {
+  flex-direction: row;
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -66,20 +76,6 @@ a {
  }
 }
 
-
-.sidebar {
-  flex: 0 1 15%;
-  padding: 5px;
-}
-
 .column-wrapper {
   flex: 0 0 85%;
-  padding: 5px;
-}
-
-
-.main-content-wrapper {
-  height: 90%;
-  display: block;
-  border: 1px solid red;
 }
