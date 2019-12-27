@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pragati+Narrow&display=swap&subset=latin-ext');
+
 /* Colors */
 $color-paragraph: #a6a6a6;
 $color-brand-main: #F58220;
@@ -10,14 +12,14 @@ $color-negative: #EC7171;
 $color-negative-hover: #DE5252;
 $color-dark: #333333;
 $color-dark-sidebar: #191919;
-$color-gray: #bababa;
+$color-light-gray: #bababa;
 $color-disable: #E3E3E3;
 $color-light: #F5F5F2;
 $color-background: #f1f2f6;
 $color-border-light: #dcdde1;
 $color-red: #FF0000;
 $color-main-hover: #FFA200;
-$color-avtive-green: #04AE00;
+$color-active-green: #04AE00;
 
 /* Size */
 $paragraph-font-size: 16px;
@@ -29,5 +31,6 @@ $topbar-height: 60px;
 $brand-font: 'Roboto';
 $paragraph-font: "Open Sans", Helvetica, Arial;
 $main-font: "Dancing Script", cursive;
+$font-page-header: 'Pragati Narrow', sans-serif;
 
 $radius: 3px;
