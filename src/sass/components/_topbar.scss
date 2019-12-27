@@ -3,29 +3,34 @@
   display: flex;
   white-space: nowrap;
   list-style: none;
-  min-height: 80px;
+  min-height: 100px;
   width: 100%;
   padding: 0;
   margin: 0;
-  border-bottom: 1px solid #a6a6a6;
+  border-bottom: 1px solid #dcdde1;
   .flex-item {
     padding: 10px 12px;
-    border-left: 1px solid #a6a6a6;
+    border-left: 1px solid #dcdde1;
   }
 }
 
 .row {
   .item1 {
-    flex: 0 0 60%;
+    flex: 0 0 54%;
   }
   .item2 {
-    flex: 0 0 15%;
+    flex: 0 0 17%;
     .light-icon {
       width: 18px;
       height: 18px;
     }
   }
   .item3 {
-      flex: 0 0 5%;
+      flex: 0 0 6%;
   }
+}
+
+.amount {
+  font-size: 27px;
+  font-weight: bold;
 }

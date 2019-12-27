@@ -1,15 +1,18 @@
+a {
+  text-decoration: none;
+  color: $color-links;
+  font-size: 17px;
+  margin: 0;
+}
+
 .link-small {
-  font-size: 20px;
+  font-size: 21px;
 }
 
 .link-big {
-  font-size: 22px;
+  font-size: 23px;
 }
 
-.amount {
-  font-size: 20px;
-  font-weight: bold;
-}
 
 .link-color {
   color: $color-links;

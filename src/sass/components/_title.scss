@@ -1,0 +1,15 @@
+h1 {
+  font-size: 37px;
+  font-family: $main-font;
+  color: $color-light;
+  padding: 0 30px;
+}
+
+.title-wrapper {
+    justify-content: space-between;
+    height: 100px;
+    i {
+      padding: 25px;
+      font-size: 30px;
+    }
+}

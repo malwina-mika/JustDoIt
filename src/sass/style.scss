@@ -3,11 +3,14 @@
 @import "normalize";
 @import "layout";
 
+@import "components/avatar";
 @import "components/buttons";
-@import "components/navlink";
 @import "components/icons";
-@import "components/topbar";
 @import "components/links";
+@import "components/navlink";
+@import "components/title";
+@import "components/topbar";
+
 
 @import "sections/sidebar";
 
