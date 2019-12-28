@@ -32,8 +32,31 @@
    padding: 7px;
    min-width: 60px;
    height: 60px;
-   color: #fff;
+   margin-left: 15px;
    svg {
      fill: #fff;
    }
  }
+
+ .btn-chart {
+   background-color: $color-light;
+   color: $color-paragraph;
+   padding: 15px 30px;
+   margin: 18px;
+   font-size: 20px;
+   .fas {
+     margin-right: 5px;
+   }
+ }
+
+.btn-blue {
+    color: $color-light-blue;
+}
+
+.btn-orange {
+   color: $color-brand-main;
+}
+
+.btn-green {
+   color: $color-active-green;
+}
