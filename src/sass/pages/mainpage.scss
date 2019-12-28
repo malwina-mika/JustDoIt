@@ -1,13 +1,16 @@
 .main-content-wrapper {
-  height: 90%;
-  display: block;
+  min-height: 2500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   border: 1px solid #f5f6fa;
   background-color: #f1f2f6;
-  position: relative;
 }
 
 .main-content {
-  height: 95%;
+ flex: 0 0 50%;
+ display: inline-block;
+ margin: 30px;
   width: 97%;
   border: 1px solid #f5f6fa;
   background-color: #fff;
@@ -37,4 +40,9 @@
     margin: 15px 0 5px;
     color: #333333;
   }
+}
+
+.table {
+  margin: 40px auto;
+  text-align: center;
 }

@@ -64,7 +64,9 @@ p {
 }
 
 .column-wrapper {
+  min-height: 1400px;
   flex: 0 0 85%;
+
 }
 
 .sidebar, .top-side, .main-content-wrapper {
