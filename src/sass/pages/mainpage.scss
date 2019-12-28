@@ -21,20 +21,20 @@
     border: none;
     padding: 0
   }
-  .border {
-    border: 1px solid #bababa;
-    border-right: none;
-    width: 200px;
-    padding: 0 17px;
-    height: 60px;
+  .input1 {
+    border-right: 1px solid #bababa;
+  }
+  .input2 {
+    padding-left: 17px;
   }
 }
 
 .input-calendar  {
   border: 1px solid #bababa;
-  width: 250px;
+  width: 450px;
   padding: 0 17px;
   height: 60px;
+  border-radius: 4px;
   input {
     max-width: 180px;
   }
