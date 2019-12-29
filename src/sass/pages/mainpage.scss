@@ -43,6 +43,10 @@
 }
 
 .table {
-  margin: 40px auto;
+  margin: 60px auto 0;
   text-align: center;
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
 }
