@@ -4,19 +4,6 @@
   padding: 0;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-left: 0;
-  padding-right: 0;
-}
-
 h1, h2, h3 {
   font-family: $brand-font;
 }
@@ -45,7 +32,6 @@ p {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-
 }
 
 .flex-container {
@@ -54,17 +40,22 @@ p {
   flex-wrap: wrap;
   width: 100vw;
   min-height: 100vh;
- > * {
-   margin-bottom: 5px;
-   &:last-child {
+  > * {
+    margin-bottom: 5px;
+    &:last-child {
      margin-bottom: 0;
-   }
- }
+    }
+  }
+}
+
+.flex-column-wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .column-wrapper {
   min-height: 1400px;
-  flex: 0 0 85%;
 }
 
 .align-center {
@@ -87,7 +78,6 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 .border-main {
@@ -110,57 +100,61 @@ p {
   margin: 30px 0;
 }
 
-.space-between {
-    justify-content: space-between;
-}
-
-.linkk {
-  z-index: 9;
-  height: 60px;
-  width: 100%;
-  border-bottom: 1px solid red;
-  transition: 0.2s;
-  &:hover {
-    background-color: $color-light-hover;
-  }
-  &:hover .icon {
-      display: block;
-      svg:last-child {
-        fill: #fff;
-      }
-  }
-}
-
 .margin-auto {
   margin: 0 auto;
+}
+
+.space-between {
+    justify-content: space-between;
 }
 
 .flex-between  {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content:space-between;
 }
 
-table {
+.container {
   width: 100%;
-  td {
-    flex: 0 0 30%;
-    font-size: 25px;
-    color: $color-paragraph;
-    border-top: 1px solid #dcdde1;
-    padding: 30px;
-    svg {
-      width: 20px;
-      height: 20px;
-      margin-left: 15px;
-      &:first-child {
-        fill: $color-brand-main;
-      }
-    }
-  }
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
 }
 
-.icon {
-  display: none;
+.container-fluid {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 75px;
+}
+
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1px;
+  margin-left: -1px;
+}
+
+[class^="col-"] {
+  padding-right: 1px;
+  padding-left: 1px;
+}
+
+@media(max-width: 767px) {
+  @include grid('sm');
+}
+
+@media(min-width: 768px) {
+  @include grid('md');
+}
+
+@media(min-width: 992px) {
+  @include grid('lg');
+}
+
+@media(min-width: 1200px) {
+  @include grid('xl');
 }

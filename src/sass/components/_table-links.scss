@@ -1,0 +1,48 @@
+.table {
+  width: 100%;
+  table {
+    flex: 0 0 30%;
+    font-size: 25px;
+    color: $color-paragraph;
+    border-top: 1px solid #dcdde1;
+    padding: 30px;
+    svg {
+      width: 20px;
+      height: 20px;
+      margin-left: 15px;
+      &:first-child {
+        fill: $color-brand-main;
+      }
+    }
+  }
+}
+
+.icon-basic {
+  display: none;
+}
+
+table {
+  height: 60px;
+  width: 100%;
+  transition: 0.2s;
+  &:hover {
+    background-color: $color-light-hover;
+  & .icon-basic {
+      display: inline-block;
+      svg:last-child {
+        fill: #fff;
+      }
+    }
+  }
+}
+
+.scroll-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.scroll-wrapper table {
+  width: 100%;
+  max-width: 100%;
+}
