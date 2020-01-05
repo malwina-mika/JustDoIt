@@ -1,11 +1,35 @@
 .table {
-  width: 100%;
-  table {
-    flex: 0 0 30%;
+  img {
+    max-width: 80%;
+  }
+
+  .icon-basic {
+    display: none;
+  }
+
+  .links-table {
     font-size: 25px;
     color: $color-paragraph;
     border-top: 1px solid #dcdde1;
     padding: 30px;
+    padding-bottom: 50px;
+    justify-content:space-between;
+    height: 60px;
+    width: 100%;
+    max-width: calc(100vw - 25px);
+    transition: 0.2s;
+
+    &:hover {
+      background-color: $color-light-hover;
+
+    & .icon-basic {
+        display: inline-block;
+        svg:last-child {
+          fill: #fff;
+        }
+      }
+    }
+
     svg {
       width: 20px;
       height: 20px;
@@ -14,35 +38,20 @@
         fill: $color-brand-main;
       }
     }
-  }
-}
 
-.icon-basic {
-  display: none;
-}
-
-table {
-  height: 60px;
-  width: 100%;
-  transition: 0.2s;
-  &:hover {
-    background-color: $color-light-hover;
-  & .icon-basic {
-      display: inline-block;
-      svg:last-child {
-        fill: #fff;
-      }
+    li {
+      text-align: left;
+      display: block;
     }
+
+    li:first-child {
+      width: 151px;
+    }
+
+    li:nth-child(2) {
+      text-align: left;
+      width: 268px;
+    }
+
   }
-}
-
-.scroll-wrapper {
-  display: block;
-  width: 100%;
-  overflow-x: auto;
-}
-
-.scroll-wrapper table {
-  width: 100%;
-  max-width: 100%;
 }
