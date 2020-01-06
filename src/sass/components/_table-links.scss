@@ -1,8 +1,5 @@
 .table {
-  img {
-    max-width: 80%;
-  }
-
+  margin: 80px;
   .icon-basic {
     display: none;
   }
@@ -54,4 +51,15 @@
     }
 
   }
+}
+
+@media(max-width: 767px) {
+
+    .table .links-table {
+      padding: 20px 10px 70px 0px;
+      height: 140px;
+      li {
+        padding-top: 9px;
+      }
+    }
 }

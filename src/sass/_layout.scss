@@ -24,6 +24,10 @@
   }
 }
 
+h1 {
+  font-size: 35px;
+}
+
 h1, h2, h3 {
   font-family: $brand-font;
 }
@@ -36,12 +40,8 @@ h1, h2, h3 {
 
 .column-wrapper {
   min-height: 1400px;
-  max-width: 100vw!important;
-}
-
-section {
-    max-width: calc(100vw - 203px);
-    margin-right: -10px;
+  width: 100vw!important;
+  width: calc(100% - 210px)!important;
 }
 
 .align-center {
@@ -107,18 +107,13 @@ section {
   overflow-x: auto;
 }
 
-.scroll-wrapper table {
-  width: 100%;
-  max-width: 100%;
-}
-
 .width-100vw {
   max-width: 100vw;
 }
 
 .container {
   width: 100%;
-  max-width: 1130px;
+  max-width: 1170px;
   margin: 0 auto;
   padding-left: 0;
   padding-right: 0;
@@ -145,63 +140,21 @@ section {
 }
 
 @media(max-width: 767px) {
-  .main-content {
-    margin: 5px;
-    width: 100%;
-  }
-
   .container {
     max-width: 100vw;
     margin: 0 auto;
-    padding: 15px;
-  }
-
-  .table .links-table {
-    padding: 30px 10px 70px 10px;
-  }
-
-  .table img {
-    max-width: 95%;
-    padding-top: 30px;
-  }
-  .list-item {
-    min-width: 300px;
-  }
-
-  .title-wrapper {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
-
-  .btn-chart {
-    margin: 5px;
-  }
-
-  .calendar {
-    padding: 20px;
-    .input2 {
-      padding-left: 10px;
-    }
-  }
-  .input-calendar {
-    height: 100px;
+    padding-top: 25px;
+    padding-bottom: 15px;
   }
 }
 
-@media(min-width: 768px) {
-  .calendar {
-    padding: 20px;
-    .input2 {
-      padding-left: 10px;
-    }
-  }
-  .title-wrapper  {
-    i {
-      padding-left: 15px;
-    }
-    h1 {
-      font-size: 30px;
-    }
+@media(min-width: 992px) {
+
+}
+
+@media(min-width: 1200px) {
+  .list-item {
+    width: 400px;
   }
 }
 

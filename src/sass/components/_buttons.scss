@@ -18,6 +18,32 @@
 
 }
 
+.btn-refresh {
+  width: 60px;
+  height: 60px;
+  margin-left: 15px;
+  padding: 10px;
+  border-radius: $radius;
+  color: $color-light;
+  background-color: $color-brand-main;
+  display: inline-block;
+  font-size: 18px;
+  box-shadow: none;
+  border: none;
+
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  &:hover {
+    background-color: $color-main-hover;
+  }
+  svg {
+    fill: #fff;
+  }
+
+}
+
 .btn-main {
   padding-left: 10px;
   padding-right: 10px;
@@ -26,15 +52,6 @@
 .btn:active,
  .btn:focus {
 
- }
-
- .btn-refresh {
-   max-width: 60px;
-   height: 60px;
-   margin-left: 15px;
-   svg {
-     fill: #fff;
-   }
  }
 
  .btn-chart {
@@ -49,8 +66,8 @@
  }
 
 .btn-add {
-  padding: 15px 30px;
-  margin: 18px;
+  padding: 14px 25px;
+  margin: 28px;
   font-size: 20px;
 }
 
@@ -64,4 +81,16 @@
 
 .btn-green {
    color: $color-active-green;
+}
+
+@media(max-width: 767px) {
+  .btn-chart {
+    margin: 5px;
+  }
+
+  .btn-refresh {
+    max-width: 50px;
+    height: 50px;
+  }
+
 }

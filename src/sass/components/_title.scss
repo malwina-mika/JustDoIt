@@ -1,5 +1,4 @@
 h1 {
-  font-size: 35px;
   font-family: $main-font;
   color: $color-light;
 }
@@ -13,4 +12,18 @@ h1 {
       padding-left: 30px;
       font-size: 30px;
     }
+}
+
+@media(max-width: 767px) {
+
+  .title-wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .title-wrapper  {
+    i {
+      padding-left: 15px;
+    }
+  }
 }
