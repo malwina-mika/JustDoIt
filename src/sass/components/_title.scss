@@ -19,6 +19,9 @@ h1 {
   .title-wrapper {
     padding-left: 50px;
     padding-right: 50px;
+    position: fixed;
+    background-color: $color-dark-sidebar;
+    width: 100vw;
   }
 
   .title-wrapper  {

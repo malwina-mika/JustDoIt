@@ -40,8 +40,7 @@ h1, h2, h3 {
 
 .column-wrapper {
   min-height: 1400px;
-  width: 100vw!important;
-  width: calc(100% - 210px)!important;
+  margin-left: 210px;
 }
 
 .align-center {
@@ -145,6 +144,10 @@ h1, h2, h3 {
     margin: 0 auto;
     padding-top: 25px;
     padding-bottom: 15px;
+  }
+
+  .column-wrapper {
+    margin: 0 auto;
   }
 }
 

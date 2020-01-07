@@ -1,32 +1,18 @@
 .top-side {
-
   min-height: 90px;
   border-bottom: 1px solid #dcdde1;
   background-color: #fff;
-
+  max-width: calc(100vw - 220px);
   .flex-item {
     padding: 10px;
     border-left: 1px solid #dcdde1;
   }
 }
 
-// .row {
-//   .item1 {
-//     flex: 0 0 54%;
-//   }
-//   .item2 {
-//     flex: 0 0 17%;
-
 .light-icon {
   width: 18px;
   height: 18px;
 }
-
-//   }
-//   .item3 {
-//       flex: 0 0 6%;
-//   }
-// }
 
 .amount {
   font-size: 20px;
@@ -35,10 +21,17 @@
   padding-right: 8px;
 }
 
+.display {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @media(max-width: 767px) {
 
   .top-side {
+    display: none;
     padding: 0 30px 30px 20px;
+    background-color: $color-dark-sidebar;
     svg {
       width: 30px;
       height: 30px;
@@ -56,4 +49,11 @@
   .flex-item {
     justify-content: flex-start;
   }
+}
+
+@media(min-width: 768px) {
+    .top-side {
+      position: fixed;
+    }
+
 }
