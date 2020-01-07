@@ -5,11 +5,14 @@
 }
 
 
-.show {
+.sidebar .show {
   display: block;
 }
 
 @media(max-width: 767px) {
+  .navlinks {
+    margin-top: 110px;
+  }
   .navlinks, .avatar-wrapper{
       display: none;
   }

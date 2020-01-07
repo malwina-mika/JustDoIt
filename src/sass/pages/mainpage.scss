@@ -50,6 +50,9 @@
 
     .main-content {
       margin: 15px 5px;
+      &:nth-of-type(1) {
+        margin-top: 110px
+      }
     }
 
     .table img {
@@ -63,7 +66,7 @@
 
     .link {
       .container {
-      margin-top: -40px;
+      margin-top: -50px;
       }
 
     }

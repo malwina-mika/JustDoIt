@@ -21,14 +21,10 @@
   padding-right: 8px;
 }
 
-.display {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 @media(max-width: 767px) {
 
-  .top-side {
+   .top-side {
     display: none;
     padding: 0 30px 30px 20px;
     background-color: $color-dark-sidebar;
@@ -41,6 +37,12 @@
       padding-left: 15px;
     }
   }
+
+  .display {
+   display: inline-flex;
+   min-width: 100vw;
+   min-height: 100px;
+ }
 
   .top-side .flex-item {
     border: none;

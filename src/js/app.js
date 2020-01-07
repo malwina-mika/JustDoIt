@@ -11,11 +11,13 @@ function toggleTopBar(visible) {
 document.querySelector('.hamburger').addEventListener('click', function(e) {
   e.preventDefault();
 
-  toggleMenu()
+  toggleMenu();
+  console.log("clicked!");
 });
 
 document.querySelector('.hamburger').addEventListener('click', function(e) {
   e.preventDefault();
 
-  toggleTopBar()
+  toggleTopBar();
+  console.log("clicked2!");
 });
