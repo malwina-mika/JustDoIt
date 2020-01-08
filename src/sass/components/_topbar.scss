@@ -2,7 +2,7 @@
   min-height: 90px;
   border-bottom: 1px solid #dcdde1;
   background-color: #fff;
-  max-width: calc(100vw - 220px);
+  max-width: calc(100vw - 210px);
   .flex-item {
     padding: 10px;
     border-left: 1px solid #dcdde1;
@@ -58,4 +58,13 @@
       position: fixed;
     }
 
+    .sidebar {
+      min-width: 210px;
+    }
+}
+
+@media(min-width: 1200px) {
+  .top-side {
+    width: calc(100vw - 310px);
+  }
 }

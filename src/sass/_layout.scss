@@ -145,9 +145,8 @@ h1, h2, h3 {
     padding-top: 25px;
     padding-bottom: 15px;
   }
-
   .column-wrapper {
-    margin: 0 auto;
+      margin: 0 auto;
   }
 }
 
@@ -158,6 +157,9 @@ h1, h2, h3 {
 @media(min-width: 1200px) {
   .list-item {
     width: 400px;
+  }
+  .column-wrapper {
+    margin-left: 310px;
   }
 }
 
