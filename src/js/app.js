@@ -33,6 +33,7 @@ const app = {
       }
     }
 
+
     thisApp.activatePage(pageMatchingHash);
 
     for(let link of thisApp.navLinks){
@@ -47,6 +48,9 @@ const app = {
 
         window.location.hash = `#/${id}`;
 
+        document.querySelector('.navlinks').classList.remove('show');
+        document.querySelector('.avatar-wrapper').classList.remove('show');
+        document.querySelector('.top-side').classList.remove('display')
       });
     }
 
@@ -66,7 +70,6 @@ const app = {
   },
 
   initActions() {
-
     /* HAMBURGER */
 
     function toggleMenu(visible) {
@@ -83,6 +86,7 @@ const app = {
       e.preventDefault();
 
       toggleMenu();
+
       console.log("clicked!");
     });
 
@@ -90,13 +94,18 @@ const app = {
       e.preventDefault();
 
       toggleTopBar();
+
     });
+
+
+
+
+
+    /* MODAL */
 
     function closeModal() {
       document.getElementById('overlay').classList.remove('show')
     };
-
-    /* MODAL */
 
     document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
       btn.addEventListener('click', function(e) {
