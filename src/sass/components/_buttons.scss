@@ -83,6 +83,20 @@
    color: $color-active-green;
 }
 
+.btn-close {
+  font-size: 25px;
+  color: $color-dark-sidebar;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.btn-modal {
+  padding: 3px;
+  background-color: $color-brand-main;
+  color: $color-light;
+
+}
+
 @media(max-width: 767px) {
   .btn-chart {
     margin: 5px;

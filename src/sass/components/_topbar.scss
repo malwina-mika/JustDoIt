@@ -6,6 +6,16 @@
   .flex-item {
     padding: 10px;
     border-left: 1px solid #dcdde1;
+    align-items: center;
+  }
+  li:hover a,
+  li:hover p {
+      color: $color-brand-main;
+      cursor: pointer;
+  }
+  li:hover svg{
+      fill: $color-brand-main;
+      cursor: pointer;
   }
 }
 
@@ -17,8 +27,8 @@
 .amount {
   font-size: 20px;
   font-weight: bold;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 3px 8px 0 8px;
+
 }
 
 

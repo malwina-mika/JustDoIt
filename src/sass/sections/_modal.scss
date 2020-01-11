@@ -26,6 +26,24 @@
   position: relative;
   padding: 30px;
   display: none;
+  p {
+    padding: 20px;
+    cursor: pointer;
+  }
+}
+
+#messageModal {
+
+  textarea {
+    margin: 0;
+    padding: 10px;
+  }
+  button {
+    margin-bottom: 0;
+  }
+  p {
+    padding-left: 0;
+  }
 }
 
 .overlay.show {

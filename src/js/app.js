@@ -98,9 +98,6 @@ const app = {
     });
 
 
-
-
-
     /* MODAL */
 
     function closeModal() {
@@ -134,12 +131,23 @@ const app = {
       document.querySelector(modal).classList.add('show')
     };
 
-    window.addEventListener('beforeunload', function(e) {
+
+    document.querySelector('.exit').addEventListener('click', function(e) {
       e.preventDefault();
 
-      e.returnValue = false;
-
       openModal('#myModal');
+    });
+
+    document.querySelector('.notifications').addEventListener('click', function(e) {
+      e.preventDefault();
+
+      openModal('#notificationsModal');
+    });
+
+    document.querySelector('.avatar-wrapper').addEventListener('click', function(e) {
+      e.preventDefault();
+
+      openModal('#messageModal');
     });
 
   },
