@@ -24,5 +24,10 @@
     background-color: $color-dark-sidebar;
     height: 100vh;
     position: fixed;
+    min-width: 290px;
   }
+}
+
+@media(min-width: 1200px) {
+
 }

@@ -151,7 +151,9 @@ h1, h2, h3 {
 }
 
 @media(min-width: 992px) {
-
+  .column-wrapper {
+    margin-left: 270px;
+  }
 }
 
 @media(min-width: 1200px) {
