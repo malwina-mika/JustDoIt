@@ -1,0 +1,27 @@
+.payout {
+  td, th {
+    text-align: left;
+    color: $color-dark;
+  }
+  .table {
+    .links-table {
+        width: 80px;
+        &:nth-child(2) {
+          width: 130px;
+        }
+    }
+    p {
+      padding: 10px;
+
+    }
+    thead .links-table:hover {
+      background-color: inherit;
+    }
+    th:hover p {
+      background-color: $color-light-hover;
+      border-radius: $radius;
+      color: $color-dark;
+    }
+  }
+
+}
