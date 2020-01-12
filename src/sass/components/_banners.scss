@@ -1,11 +1,15 @@
 #banners {
   .links-table {
      li:first-child  {
-    
+       width: 140px;
        font-size: 22px;
      }
      li:nth-child(2) {
        width: 240px;
      }
+   }
+   .btn {
+     padding:
+     10px 20px;
    }
 }
