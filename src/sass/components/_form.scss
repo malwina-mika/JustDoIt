@@ -1,0 +1,23 @@
+#personalData{
+  .container {
+    width: 800px;
+  }
+  form {
+
+    padding: 50px;
+    justify-content: space-around;
+
+    label {
+      color: $color-paragraph;
+      font-size: 20px;
+      text-align: left;
+    }
+    input {
+      width: 230px;
+    }
+    label, input {
+      margin: 10px;
+      padding: 5px;
+    }
+  }
+}

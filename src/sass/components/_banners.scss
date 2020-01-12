@@ -1,0 +1,11 @@
+#banners {
+  .links-table {
+     li:first-child  {
+    
+       font-size: 22px;
+     }
+     li:nth-child(2) {
+       width: 240px;
+     }
+   }
+}
