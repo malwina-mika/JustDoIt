@@ -63,6 +63,10 @@
    .fas {
      margin-right: 5px;
    }
+   &:hover {
+     background-color: $color-light-gray;
+     color: $color-light;
+   }
  }
 
 .btn-add {
