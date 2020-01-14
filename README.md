@@ -1,3 +1,3 @@
 # JustDoIt
 
-https://github.com/malwina-mika/JustDoIt/settings
+https://malwina-mika.github.io/JustDoIt/
