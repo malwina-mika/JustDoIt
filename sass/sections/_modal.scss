@@ -32,7 +32,10 @@
     cursor: pointer;
   }
   .second {
-    background-color: $color-dark;
+    background-color: $color-dark-gray;
+    &:hover {
+      background-color: $color-light-gray;
+    }
   }
 }
 

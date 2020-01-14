@@ -2,6 +2,8 @@
   background-color: $color-dark-sidebar;
   padding-left: 7px;
   z-index: 9;
+  max-height: 100vh;
+    overflow-y: auto;
 }
 
 .sidebar .show {

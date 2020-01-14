@@ -816,10 +816,22 @@ h1, h2, h3 {
   padding-left: 10px;
 }
 
+.menager-avatar .link-small:hover {
+  color: #F58220;
+}
+
 .menager-avatar img {
   min-width: 70px;
   margin: 0;
   padding: 0;
+}
+
+.menager-avatar .fa-circle {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: -22px;
+  margin-top: 10px;
+  padding-bottom: 0;
 }
 
 #banners .links-table li:first-child {
@@ -923,7 +935,7 @@ h1, h2, h3 {
 
 .btn-close {
   font-size: 25px;
-  color: #191919;
+  color: #34495e;
   cursor: pointer;
   padding: 20px;
 }
@@ -1026,21 +1038,13 @@ h1, h2, h3 {
   display: none;
 }
 
-.table-details thead th {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
 .table-details thead th p {
   font-size: 15px;
   width: 110px;
-  padding-left: 5px;
 }
 
 .table-details tbody td {
   font-size: 16px;
-  margin-left: 5px;
-  margin-right: 5px;
 }
 
 .table-details .link:hover {
@@ -1199,7 +1203,6 @@ a {
 
 .payout .table p {
   padding: 10px 10px 10px 0;
-  margin-left: 25px;
 }
 
 .payout .table thead .links-table:hover {
@@ -1390,6 +1393,8 @@ h1 {
   background-color: #191919;
   padding-left: 7px;
   z-index: 9;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
 .sidebar .show {
@@ -1448,7 +1453,11 @@ h1 {
 }
 
 .modal .second {
-  background-color: #333333;
+  background-color: #34495e;
+}
+
+.modal .second:hover {
+  background-color: #bababa;
 }
 
 #messageModal .menager-avatar {
