@@ -150,6 +150,13 @@ const app = {
       openModal('#messageModal');
     });
 
+    document.querySelector('.login').addEventListener('click', function(e) {
+      e.preventDefault();
+
+      openModal('#loginModal');
+    });
+
+
   },
 
 };

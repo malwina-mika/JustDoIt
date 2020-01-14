@@ -31,19 +31,43 @@
     padding: 20px;
     cursor: pointer;
   }
+  .second {
+    background-color: $color-dark;
+  }
 }
 
 #messageModal {
-
+  .menager-avatar {
+    position: absolute;
+    left: 0;
+    padding-left: 35px;
+  }
   textarea {
     margin: 0;
-    padding: 10px;
+    padding: 10px 10px 10px 30px;
+    border: none;
   }
-  button {
-    margin-bottom: 0;
-  }
+
   p {
     padding-left: 0;
+  }
+  .border-wrapper {
+    position: relative;
+    margin: 130px 5px 10px 5px;
+  }
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 10px;
+  }
+}
+
+#loginModal {
+
+  input {
+    padding: 10px;
+    border: none;
   }
 }
 
@@ -60,4 +84,15 @@
   top: 0;
   right: 0;
   padding: 5px 10px;
+}
+
+.btn-modal {
+  padding: 6px;
+}
+
+.border-wrapper {
+  border: 1px solid #E3E3E3;
+  padding: 5px 15px;
+  margin-bottom: 8px;
+  align-items: center;
 }
